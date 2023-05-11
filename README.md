@@ -11,12 +11,14 @@ Be involved in this repository - researchers, engineers, and enthusiasts interes
 ## Potential Component List
 
 The "potential Component List" section contains a comprehensive list of components that will be investigated and considered for piezoelectric energy generation research. The list: 
-- piezoelectric materials ( what is the best for generate energy) 
+- 5 X pizo (piezoelectric materials - what is the best for generate energy) 
 
 - bridge rectifier
 
 - energy storage systems - dose Capacitor is the best for that project? 
 
+- Microfarad capacitor 10 MF  (max 50 volts ) (for charging ) (what is the speed of charging and why I should consider that ? ) 
 
+- Diode (note the energy cost for that is 0.6-0.7 volts)  OR Germanium diode (energy cost of 0.3)
 
 By documenting the planned components, we aim to explore the available options, evaluate their suitability for our research objectives, and make informed decisions. This section will be continuously updated as we research and assess different components, providing transparency and facilitating collaboration with the community
