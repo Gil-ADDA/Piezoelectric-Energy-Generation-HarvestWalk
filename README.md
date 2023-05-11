@@ -17,7 +17,8 @@ The "potential Component List" section contains a comprehensive list of componen
 
 - Energy storage systems - dose Capacitor is the best for that project? 
 
-- Microfarad capacitor 10 MF  (max 50 volts ) (for charging ) (what is the speed of charging and why I should consider that ? ) 
+- Capasitor Microfarad capacitor 10 MF  (max 50 volts ) (for charging ) (what is the speed of charging and why I should consider that ? ) 
+how much Microfarad (µF) do i need for that project? 
 
 - Diode (note the energy cost for that is 0.6-0.7 volts)  OR Germanium diode (energy cost of 0.3)
 
