@@ -24,9 +24,15 @@ how much Microfarad (µF) do i need for that project?
 
 By documenting the planned components, we aim to explore the available options, evaluate their suitability for our research objectives, and make informed decisions. This section will be continuously updated as we research and assess different components, providing transparency and facilitating collaboration with the community
 
+# patterns and thoughts of how to create the piezoelectric device
 
 
 # Inspiration Videos and Articles
 
 1. https://www.youtube.com/watch?v=dO8zsgbunvY - Piezoelectric Effect - Using Crystals to Generate Electricity
 2. https://www.youtube.com/watch?v=RiRyzLl4Y8U - Full Wave Bridge Rectifier + Capacitor filters + half wave rectifier (the engineering mindset)
+
+
+
+(https://reader.elsevier.com/reader/sd/pii/S0196890422000681?token=AFD5F7CA93BB9FAA56042AC6F2865C62F7A5FC66C200C1C4D9B9C6044E4D53B57DBC336F071ADACD4F7C774C14C267E5&originRegion=eu-west-1&originCreation=20230511141830
+A review of piezoelectric energy harvesting tiles)
