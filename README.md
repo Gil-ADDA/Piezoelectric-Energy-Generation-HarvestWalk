@@ -27,6 +27,14 @@ By documenting the planned components, we aim to explore the available options, 
 # patterns and thoughts of how to create the piezoelectric device
 
 
+# Thoughts of which devices to power 
+
+1. lights 
+2. micro controllers 
+3. Occupancy Sensors
+4. green communication 
+
+
 # Inspiration Videos and Articles
 
 1. https://www.youtube.com/watch?v=dO8zsgbunvY - Piezoelectric Effect - Using Crystals to Generate Electricity
