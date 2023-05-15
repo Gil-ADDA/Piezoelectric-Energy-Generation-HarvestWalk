@@ -36,10 +36,10 @@ By documenting the planned components, we aim to explore the available options, 
 # Thoughts of which devices to power 
 
 1. lights 
-2. micro controllers 
+2. microcontrollers 
 3. Occupancy Sensors
-4. green communication
-5. Smart switches 
+4. green communication (node)
+5. Smart switches
 
 
 # potential ways to visualize the results: 
