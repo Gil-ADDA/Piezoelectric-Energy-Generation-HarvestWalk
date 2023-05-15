@@ -4,6 +4,9 @@ The primary goal of this repository is to explore the potential of piezoelectric
 
 Be involved in this repository - researchers, engineers, and enthusiasts interested in piezoelectric energy **are all welcome!** Share your ideas, feedback, and more to help this project reach its full potential. With everyone's help, we can work towards a more sustainable future. No matter your experience, your input is invaluable - so please reach out and contribute via opening issues, email, or any other suggestions!
 
+Problem statment 
+With the proliferation of IoT devices in indoor environments like homes and offices, providing a sustainable, wireless power source for these devices is a significant challenge. This is particularly relevant for low-power devices such as temperature or humidity sensors and smart switches, which are frequently used in these settings. The problem is compounded by the need to reduce wire clutter and improve aesthetics. This project aims to investigate whether a piezoelectric tile, harvesting energy from regular foot traffic or other mechanical stimuli in these environments, could generate sufficient power to operate these sensors and switches. A key part of this investigation will be to accurately measure the amount of electrical energy each tile generates. 
+
 ## Contact Details
 [<img src="https://img.icons8.com/color/48/000000/gmail.png"/>](mailto:giloo1047@gmail.com)
 [<img src="https://img.icons8.com/color/48/000000/linkedin.png"/>](https://www.linkedin.com/in/gil-adda-16385510b/)
