@@ -4,6 +4,9 @@ The primary goal of this repository is to explore the potential of piezoelectric
 
 Be involved in this repository - researchers, engineers, and enthusiasts interested in piezoelectric energy **are all welcome!** Share your ideas, feedback, and more to help this project reach its full potential. With everyone's help, we can work towards a more sustainable future. No matter your experience, your input is invaluable - so please reach out and contribute via opening issues, email, or any other suggestions!
 
+the piezoelectric tiles can turn steps into energy. Over a year, this energy could replace a portion of electricity usually pulled from the grid. This means less reliance on traditional power sources, which often produce CO2, a greenhouse gas. Plus, it saves money on electricity bills. 
+Besides, these tiles can potentially offer a clean, wire-free solution for powering IoT devices. Imagine a city where foot traffic in public spaces like parks, subway stations, or sidewalks generates power for public IoT devices. 
+
 # Problem statment 
 With the proliferation of IoT devices in indoor environments like homes and offices, providing a sustainable, wireless power source for these devices is a significant challenge. This is particularly relevant for low-power devices such as temperature or humidity sensors and smart switches, which are frequently used in these settings. The problem is compounded by the need to reduce wire clutter and improve aesthetics. This project aims to investigate whether a piezoelectric tile, harvesting energy from regular foot traffic or other mechanical stimuli in these environments, could generate sufficient power to operate these sensors and switches. A key part of this investigation will be to accurately measure the amount of electrical energy each tile generates. 
 
@@ -37,6 +40,13 @@ By documenting the planned components, we aim to explore the available options, 
 3. Occupancy Sensors
 4. green communication
 5. Smart switches 
+
+
+# potential ways to visualize the results: 
+
+Visual Representations:  The more steps, the brighter the light.
+
+Time-based Comparisons: how much energy would be generated over time.
 
 # Inspiration Videos and Articles
 
