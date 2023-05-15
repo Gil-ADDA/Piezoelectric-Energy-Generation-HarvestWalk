@@ -36,9 +36,7 @@ By documenting the planned components, we aim to explore the available options, 
 2. micro controllers 
 3. Occupancy Sensors
 4. green communication
-5. communicate to Lora 
-6. 
-
+5. Smart switches 
 
 # Inspiration Videos and Articles
 
