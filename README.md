@@ -30,6 +30,13 @@ how much Microfarad (µF) do i need for that project?
 
 By documenting the planned components, we aim to explore the available options, evaluate their suitability for our research objectives, and make informed decisions. This section will be continuously updated as we research and assess different components, providing transparency and facilitating collaboration with the community
 
+
+# Design of the tile
+List of materials :
+
+Rubber tile: The choice of material is essential here. Rubber is chosen because it is durable, flexible, and resilient, for frequently walking.
+
+Rubber ball: This will be placed in the middle of the tile, acting as the central point of contact. The ball should be small enough to fit comfortably in the space between the two halves of the tile, but large enough to make contact with both piezoelectric sensors when pressure is applied to the tile.
 # patterns and thoughts of how to create the piezoelectric device
 
 
