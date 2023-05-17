@@ -17,7 +17,7 @@ With the proliferation of IoT devices in indoor environments like homes and offi
 ## Potential Component List
 
 The "potential Component List" section contains a comprehensive list of components that will be investigated and considered for piezoelectric energy generation research. The list: 
-- 5 X pizo (piezoelectric materials - what is the best for generate energy?) 
+- 5 X pizo (piezoelectric materials - what is the best for generate energy?) (Diaphragm)
 
 - Bridge rectifier ( which one is the most suitable?) 
 
