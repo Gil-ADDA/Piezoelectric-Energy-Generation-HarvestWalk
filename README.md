@@ -68,6 +68,6 @@ A review of piezoelectric energy harvesting tiles)
 
 
 
-process of creation 
-
+# process of creation 
+-  checking the current flow of the bridge rectifier
 [![checking the current flow](https://img.youtube.com/vi/git2ZRKCuz4/0.jpg)](https://youtube.com/shorts/git2ZRKCuz4)
