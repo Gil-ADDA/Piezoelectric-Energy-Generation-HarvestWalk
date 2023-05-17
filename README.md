@@ -70,4 +70,8 @@ A review of piezoelectric energy harvesting tiles)
 
 # process of creation 
 -  checking the current flow of the bridge rectifier
-[![checking the current flow](https://img.youtube.com/vi/git2ZRKCuz4/0.jpg)](https://youtube.com/shorts/git2ZRKCuz4)
+ 17/5[![checking the current flow](https://img.youtube.com/vi/git2ZRKCuz4/0.jpg)](https://youtube.com/shorts/git2ZRKCuz4)
+ 
+- checking the charge of supercapacitor
+17/7 [![checking the charge of supercapacitor](https://img.youtube.com/vi/cgkGJ2SmKRU/0.jpg)](https://youtube.com/shorts/cgkGJ2SmKRU)
+
