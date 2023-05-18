@@ -14,6 +14,9 @@ With the proliferation of IoT devices in indoor environments like homes and offi
 [<img src="https://img.icons8.com/color/48/000000/gmail.png"/>](mailto:giloo1047@gmail.com)
 [<img src="https://img.icons8.com/color/48/000000/linkedin.png"/>](https://www.linkedin.com/in/gil-adda-16385510b/)
 
+# Reserch field
+The reserch filed going to be around urban renewable energy and pizoelectric 
+
 ## Potential Component List
 
 The "potential Component List" section contains a comprehensive list of components that will be investigated and considered for piezoelectric energy generation research. The list: 
