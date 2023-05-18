@@ -77,4 +77,8 @@ A review of piezoelectric energy harvesting tiles)
  
 - checking the charge of supercapacitor
  [![ 17/5checking the charge of supercapacitor](https://img.youtube.com/vi/cgkGJ2SmKRU/0.jpg)](https://youtube.com/shorts/cgkGJ2SmKRU)
+ 
+ 
+ - Diffrent why of creating the circute : Cooper foil underneath for the negative side and above for the positive side. Moreover the pizoelectric cover with tape to prevent from that to brake. 
+ - 
 
