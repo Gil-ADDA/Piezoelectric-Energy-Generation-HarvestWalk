@@ -80,5 +80,6 @@ A review of piezoelectric energy harvesting tiles)
  
  
  - Diffrent why of creating the circute : Cooper foil underneath for the negative side and above for the positive side. Moreover the pizoelectric cover with tape to prevent from that to brake. 
- - 
+![Circuit with Copper Foil](https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/91495337293ec5821d29b22b9583bb38f568e1e7/images/circute%20with%20cooper%20foil%20for%20negative%20and%20positive%20Large.jpeg)
+
 
