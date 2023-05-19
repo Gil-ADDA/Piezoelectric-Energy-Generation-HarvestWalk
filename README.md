@@ -68,8 +68,13 @@ Time-based Comparisons: how much energy would be generated over time.
 (https://reader.elsevier.com/reader/sd/pii/S0196890422000681?token=AFD5F7CA93BB9FAA56042AC6F2865C62F7A5FC66C200C1C4D9B9C6044E4D53B57DBC336F071ADACD4F7C774C14C267E5&originRegion=eu-west-1&originCreation=20230511141830
 A review of piezoelectric energy harvesting tiles)
 
-
-
+## The decision making process
+- making tile of piezoelectric for harvesting energy 
+- create the circuit
+- material of the tile
+- conductive materials
+- what  to measure ?
+- how to display the data after deploy the tile
 
 # process of creation 
 -  checking the current flow of the bridge rectifier
