@@ -111,14 +111,14 @@ The specific voltage value is not provided, but with the known capacitance and t
  
 ![Circuit with Copper Foil](https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/6ac9517e8cfcaad6a790751ce78773cfdc16aff2/images/The%20circuit%20of%20the%20second%20prototype.jpeg)
 ## The layers
-|------------------------|
-| 1. Copper Foil        |  <- Positive Side
-|------------------------|
-| 2. Clear Stick Wrap   |
-|------------------------|
-| 3. Piezo Electric     |
-|------------------------|
-| 4. Negative Copper Foil |  
-|------------------------|
-| 5. Cardboard          |
-|------------------------|
+- |------------------------|
+- |   Copper Foil          |  <- Positive Side
+- |------------------------|
+- |   Clear Stick Wrap     |
+- |------------------------|
+- |   Piezo Electric       |
+- |------------------------|
+- |   Negative Copper Foil |  
+- |------------------------|
+- |   Cardboard            |
+- |------------------------|
