@@ -110,3 +110,15 @@ The specific voltage value is not provided, but with the known capacitance and t
  [![ 6/6 checking the charge of supercapacitor with the new circute ](https://img.youtube.com/vi/lCWuk8zGKjg/0.jpg)](https://youtu.be/lCWuk8zGKjg)
  
 ![Circuit with Copper Foil](https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/6ac9517e8cfcaad6a790751ce78773cfdc16aff2/images/The%20circuit%20of%20the%20second%20prototype.jpeg)
+## The layers
+|------------------------|
+|   Copper Foil          |  <- Positive Side
+|------------------------|
+|   Clear Stick Wrap     |
+|------------------------|
+|   Piezo Electric       |
+|------------------------|
+|   Negative Copper Foil |  
+|------------------------|
+|   Cardboard            |
+|------------------------|
