@@ -81,9 +81,11 @@ A review of piezoelectric energy harvesting tiles)
 
 # process of creation 
 -  checking the current flow of the bridge rectifier
+
  [![ 17/5checking the current flow](https://img.youtube.com/vi/git2ZRKCuz4/0.jpg)](https://youtube.com/shorts/git2ZRKCuz4)
  
 - checking the charge of supercapacitor
+
  [![ 17/5checking the charge of supercapacitor](https://img.youtube.com/vi/cgkGJ2SmKRU/0.jpg)](https://youtube.com/shorts/cgkGJ2SmKRU)
  
 - Different way of creating the circuit : Copper foil underneath for the negative side and above for the positive side. Moreover the piezoelectric cover with tape to prevent from that to brake.
