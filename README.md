@@ -29,6 +29,15 @@ The "potential Component List" section contains a comprehensive list of componen
 - Capasitor Microfarad capacitor 10 MF  (max 50 volts ) (for charging ) (what is the speed of charging and why I should consider that ? ) 
 how much Microfarad (µF) do i need for that project? 
 
+
+# Second Prototype
+In the second prototype, I attached the copper foil and piezoelectric component to a cardboard surface using a clear adhesive. This method ensured that the circuit components remained securely in place.
+
+To achieve this, I carefully adhered the copper foil, both the negative and positive sides, along with the piezoelectric component onto the cardboard. The copper foil acted as the conductive material for the circuit, while the clear adhesive provided a strong bond between the components and the cardboard surface.
+
+By affixing the circuit elements to the cardboard, I created a stable and functional prototype that maintained the desired circuit arrangement.
+
+
 - Diode (note the energy cost for that is 0.6-0.7 volts)  OR Germanium diode (energy cost of 0.3)
 
 By documenting the planned components, we aim to explore the available options, evaluate their suitability for our research objectives, and make informed decisions. This section will be continuously updated as we research and assess different components, providing transparency and facilitating collaboration with the community
