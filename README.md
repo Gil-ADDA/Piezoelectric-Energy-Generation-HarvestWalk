@@ -30,12 +30,6 @@ The "potential Component List" section contains a comprehensive list of componen
 how much Microfarad (µF) do i need for that project? 
 
 
-# Second Prototype
-In the second prototype, I attached the copper foil and piezoelectric component to a cardboard surface using a clear adhesive. This method ensured that the circuit components remained securely in place.
-
-To achieve this, I carefully adhered the copper foil, both the negative and positive sides, along with the piezoelectric component onto the cardboard. The copper foil acted as the conductive material for the circuit, while the clear adhesive provided a strong bond between the components and the cardboard surface.
-
-By affixing the circuit elements to the cardboard, I created a stable and functional prototype that maintained the desired circuit arrangement.
 
 
 - Diode (note the energy cost for that is 0.6-0.7 volts)  OR Germanium diode (energy cost of 0.3)
@@ -96,3 +90,17 @@ A review of piezoelectric energy harvesting tiles)
 ![Circuit with Copper Foil](https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/91495337293ec5821d29b22b9583bb38f568e1e7/images/circute%20with%20cooper%20foil%20for%20negative%20and%20positive%20Large.jpeg)
 
 
+
+
+# Second Prototype
+In the second prototype, I attached the copper foil and piezoelectric component to a cardboard surface using a clear adhesive. This method ensured that the circuit components remained securely in place.
+
+To achieve this, I carefully adhered the copper foil, both the negative and positive sides, along with the piezoelectric component onto the cardboard. The copper foil acted as the conductive material for the circuit, while the clear adhesive provided a strong bond between the components and the cardboard surface.
+
+By affixing the circuit elements to the cardboard, I created a stable and functional prototype that maintained the desired circuit arrangement.
+
+In the video at 0:36, a captivating demonstration was shown, illustrating the charging process of 470 microfarads (μF), 16-volt (V) capacitor
+The video showcases the charging process of a 470 microfarads (μF) capacitor. By utilizing the impact of footsteps on a tile surface, an estimated current of approximately 0.5 milliamperes (mA) or 0.0005 Amperes (A) is directed into the capacitor. Using the formula Q = C × V, where Q represents the charge, C represents the capacitance, and V denotes the voltage across the capacitor, the calculated charge on the capacitor is approximately 470 × 10^(-6) Coulombs (C), or 470 micro coulombs (μC). The specific voltage value is not provided, but with the known capacitance and the applied voltage, it is possible to estimate the charge accumulation. The demonstration illustrates the utilization of mechanical energy from footsteps to generate an electrical charge and charge the capacitor.
+
+# checking the charge of supercapacitor with the second prototype 
+ [![ 6/6 checking the charge of supercapacitor with the new circute ](https://img.youtube.com/vi/lCWuk8zGKjg/0.jpg)](https://youtu.be/lCWuk8zGKjg)
