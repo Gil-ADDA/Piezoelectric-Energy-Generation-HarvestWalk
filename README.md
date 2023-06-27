@@ -129,8 +129,8 @@ The video showcases the charging process of a 470 microfarads (μF) capacitor. B
 **Using the formula Q = C × V, where Q represents the charge, C represents the capacitance, and V denotes the voltage across the capacitor,** the calculated charge on the capacitor is approximately 470 × 10^(-6) Coulombs (C), or 470 micro coulombs (μC). 
 The specific voltage value is not provided, but with the known capacitance and the applied voltage, it is possible to estimate the charge accumulation. The demonstration illustrates the utilization of mechanical energy from footsteps to generate an electrical charge and charge the capacitor.
 
-## checking the charge of supercapacitor with the second prototype 
- [![ 6/6 checking the charge of supercapacitor with the new circute ](https://img.youtube.com/vi/lCWuk8zGKjg/0.jpg)](https://youtu.be/lCWuk8zGKjg)
+## Checking the charge of the supercapacitor with the second prototype 
+ [![ 6/6 checking the charge of supercapacitor with the new circuit ](https://img.youtube.com/vi/lCWuk8zGKjg/0.jpg)](https://youtu.be/lCWuk8zGKjg)
  
 ![Circuit with Copper Foil](https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/6ac9517e8cfcaad6a790751ce78773cfdc16aff2/images/The%20circuit%20of%20the%20second%20prototype.jpeg)
 ## The layers
@@ -157,6 +157,7 @@ The specific voltage value is not provided, but with the known capacitance and t
 This captivating video showcases an experiment with a piezoelectric tile to generate electrical energy through jumping. As the jumper lands on the tile, mechanical energy is converted into electricity. The video highlights the changing voltage readings on a multimeter, starting from the lowest range and reaching the upper limit of 200mV. The multimeter range is then adjusted to 2000mV to accommodate higher readings. The voltage gradually increases with each jump until it reaches 0.400V after approximately 250 jumps within less than 4 minutes. Witness piezoelectricity's impressive energy generation potential through simple jumping movements in this exciting video experiment.
 
 # Video link
+[![cheking the charging of the capacitor with the new chip ltc3588-1](https://img.youtube.com/vi/eATSxM-Sl1c/0.jpg)](https://youtu.be/eATSxM-Sl1c)
 
 
 ## The calculation of the energy
