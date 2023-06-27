@@ -34,7 +34,30 @@ how much Microfarad (µF) do i need for that project?
 
 - Diode (note the energy cost for that is 0.6-0.7 volts)  OR Germanium diode (energy cost of 0.3)
 
-By documenting the planned components, we aim to explore the available options, evaluate their suitability for our research objectives, and make informed decisions. This section will be continuously updated as we research and assess different components, providing transparency and facilitating collaboration with the community
+# Energy Harvesting Project: Component List
+
+This project involves building a piezoelectric tile to harvest energy from footsteps. The following is a list of components needed for this project:
+
+1. **[Piezoelectric Discs](https://www.amazon.co.uk/gp/product/B0C68Q6N8B/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)**: These will be used to construct the piezoelectric tiles. Each disc should be 27mm in diameter.
+
+2. **Flexible Clear PVC**: This will serve as the base for the piezoelectric tiles. The PVC should have a thickness of 1mm.
+
+3. **[Copper Foil for Negative Side](https://www.amazon.co.uk/gp/product/B09FGCFF6G/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)**: This will be used to affix the piezoelectric discs to the PVC on the negative side of the circuit.
+
+4. **[Copper Foil for Positive Side](https://www.amazon.co.uk/gp/product/B07CSKGHDW/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)**: This will be used on the positive side of the circuit.
+
+5. **[Clear Sticky Back Plastic Book Cover](https://www.amazon.co.uk/Style-Adhesive-Sticky-Plastic-Exercise/dp/B07B9G7V3P/ref=sr_1_3_sspa?keywords=clear+self+adhesive+film&qid=1687856280&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)**: This will be used to cover and protect the piezoelectric discs.
+
+6. **[LTC3588-1 Energy Harvester Breakout](https://coolcomponents.co.uk/products/energy-harvester-ltc3588-breakout)**: This component will manage the power from the harvested energy.
+
+7. **[3.7V Lithium Polymer Rechargeable Battery](https://uk.rs-online.com/web/p/speciality-size-rechargeable-batteries/1251266?cm_mmc=UK-PLA-DS3A-_-google-_-CSS_UK_EN_Batteries_%26_Chargers_Whoop-_-Speciality+Size+Rechargeable+Batteries_Whoop-_-1251266&matchtype=&pla-529413209672&gclid=CjwKCAjwkeqkBhAnEiwA5U-uM4duz2aMI5VGAOymOHhmuY9T7OLRgWi0FYfHA1KfSKMymlsNpEG3lBoCa8gQAvD_BwE&gclsrc=aw.ds)**: This battery will store the harvested energy.
+
+8. **[Feather Huzzah ESP8266](https://www.adafruit.com/product/2821)**: This will acquire power harvested, charging, and frequency measurements, and transmit the data to cloud storage.
+
+9. **[ThingSpeak Channel](https://thingspeak.com/channels/2201210/edit)**: This platform will store and retrieve your data.
+
+10. **[Easy Connection Wires]([https://www.amazon.co.uk/gp/product/B07NWD5](https://www.amazon.co.uk/gp/product/B07NWD5NTN/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)**
+
 
 
 # Design of the tile
