@@ -145,3 +145,33 @@ The specific voltage value is not provided, but with the known capacitance and t
 - |------------------------|
 - |   Cardboard            |
 - |------------------------|
+- 
+
+
+
+
+
+# theird prototype with the calculation of the energy that is stored 
+
+## Description of the video 
+This captivating video showcases an experiment with a piezoelectric tile to generate electrical energy through jumping. As the jumper lands on the tile, mechanical energy is converted into electricity. The video highlights the changing voltage readings on a multimeter, starting from the lowest range and reaching the upper limit of 200mV. The multimeter range is then adjusted to 2000mV to accommodate higher readings. The voltage gradually increases with each jump until it reaches 0.400V after approximately 250 jumps within less than 4 minutes. Witness piezoelectricity's impressive energy generation potential through simple jumping movements in this exciting video experiment.
+
+# Video link
+
+
+## The calculation of the energy
+To calculate the energy stored in the capacitor based on your specific values, we can follow these steps:
+
+Determine the capacitance (C) of the capacitor. In your case, the capacitance is 1000 microfarads (1000 μF).
+
+Use the formula: E = 1/2 * C * V^2, where E represents the energy stored in the capacitor, C is the capacitance, and V is the voltage across the capacitor.
+
+Substituting the values into the formula, we have:
+
+E = 1/2 * (1000 * 10^-6 F) * (0.400 V)^2
+E = 1/2 * 10^-3 F * 0.160 V^2
+E = 8 * 10^-5 J
+
+Therefore, based on the given values, the energy stored in the capacitor would be approximately 8 * 10^-5 joules (J).8 * 10^-5 = 0.00008
+
+So, the end number -5 indicates that the energy stored in the capacitor is a very small value, specifically 0.00008 joules.
