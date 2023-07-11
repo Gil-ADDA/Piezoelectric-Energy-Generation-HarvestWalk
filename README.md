@@ -176,3 +176,14 @@ E = 8 * 10^-5 J
 Therefore, based on the given values, the energy stored in the capacitor would be approximately 8 * 10^-5 joules (J).8 * 10^-5 = 0.00008
 
 So, the end number -5 indicates that the energy stored in the capacitor is a very small value, specifically 0.00008 joules.
+
+
+## Circuit Connections
+### Connection Types
+
+The circuit connections can be categorized into two types: parallel and series.
+
+| Connection type | Positive terminals | Negative terminals | Current  | Voltage  |
+|-----------------|--------------------|--------------------|----------|----------|
+| Parallel        | Connected together | Connected together | Same     | Different|
+| Series          | Connected in a row | Connected in a row | Different| Same     |
