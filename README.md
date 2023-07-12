@@ -194,5 +194,5 @@ The circuit connections can be categorized into two types: parallel and series.
 
 ## Real-time Chart of DC Voltage across Capacitor
 
-<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2201210/charts/1?bgcolor=%23ffffff&color=%23d82020&dynamic=true&results=50&title=DC+Voltage+across+capacitor&type=line"></iframe>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2201210/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
 
