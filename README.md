@@ -187,3 +187,9 @@ The circuit connections can be categorized into two types: parallel and series.
 |-----------------|--------------------|--------------------|----------|----------|
 | Parallel        | Connected together | Connected together | Same     | Different|
 | Series          | Connected in a row | Connected in a row | Different| Same     |
+
+
+
+
+
+## Real-time Chart of DC Voltage across Capacitor
