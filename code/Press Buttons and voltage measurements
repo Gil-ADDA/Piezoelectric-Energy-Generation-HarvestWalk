@@ -22,6 +22,7 @@ unsigned long pressStartTime = 0; // Variable to store the time when the button 
  // Variable to store the duration of the button press (step duration)
 int pressCount = 0;        // Variable to keep track of the number of button presses
 int combinedPressCount = 0; // Variable to keep track of the combined count of both buttons
+int Press2Count = 0;  
 
 
 const int button2Pin = 3;  // Choose an appropriate unused pin, e.g., 3
@@ -41,6 +42,12 @@ const int Vin = A0;
 const int Vout = A2;
 float capVolt = 0;
 float cap2Volt = 0;
+
+float lastSentCapVolt = 0;
+float lastSentCap2Volt = 0;
+int lastSentPressCount = 0;
+int lastSentPress2Count = 0;
+int lastSentCombinedPressCount = 0;
 
 unsigned long lastResetTime = 0; // Variable to store the last time the press count was reset
 const unsigned long resetInterval = 10800000;  // 3 hours in milliseconds
@@ -116,7 +123,7 @@ if (combinedPressCount >= 65) {
   } else {
     // Button is released, calculate the duration it was pressed and reset the pressStartTime
     if (pressStartTime != 0) {
-      Serial.print("Press count: ");
+      Serial.print("Press count (Left) : ");
       Serial.println(pressCount);
       Serial.print("Combined press count of both buttons: ");
       Serial.println(combinedPressCount);
@@ -142,7 +149,7 @@ updateLEDs(combinedPressCount);
     }
 } else {
     if (press2StartTime != 0) {
-      Serial.print("Press count for second button: ");
+      Serial.print("Press count for (Right)second button: ");
       Serial.println(press2Count);
       Serial.print("Combined press count of both buttons: ");
       Serial.println(combinedPressCount);
@@ -260,8 +267,8 @@ float calculateVoltage(int pin) {
   return (5.0 / 1023.0) * analogRead(pin);
 }
 
-void sendDataToThingSpeak(int pressCount, float capVolt, float cap2Volt, int press2Count, int combinedPressCount)
- {
+void sendDataToThingSpeak(int pressCount, float capVolt, float cap2Volt, int press2Count, int combinedPressCount){ 
+   if (lastSentCapVolt != capVolt || lastSentCap2Volt != cap2Volt || lastSentPressCount != pressCount || lastSentPress2Count != press2Count || lastSentCombinedPressCount != combinedPressCount) {
   // Keep the LED on while sending data to ThingSpeak
   digitalWrite(ledPin, HIGH);
 
@@ -284,14 +291,20 @@ String url = String("/update?api_key=") + apiKey +
   Serial.println(pressCount);
   
 
-  Serial.print("Status code: ");
-  Serial.println(statusCode);
-  Serial.print("Response: ");
-  Serial.println(response);
+  // //Serial.print("Status code: ");
+  // Serial.println(statusCode);
+  // Serial.print("Response: ");
+  // Serial.println(response);
 
 
   // Turn off the LED after data is sent
   digitalWrite(ledPin, LOW);
+  lastSentCapVolt = capVolt;
+    lastSentCap2Volt = cap2Volt;
+    lastSentPressCount = pressCount;
+    lastSentPress2Count = press2Count;
+    lastSentCombinedPressCount = combinedPressCount;
+}
 }
 
 void connectToWiFi() {
