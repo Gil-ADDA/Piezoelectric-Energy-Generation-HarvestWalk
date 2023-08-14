@@ -1,0 +1,330 @@
+#include <WiFiNINA.h>
+#include <ArduinoHttpClient.h>
+// #include <EEPROM.h> // Include the EEPROM library
+#include "secrets1.h"
+
+#include <Adafruit_NeoPixel.h>
+
+#define PIN            6  // Define the pin where the data line is connected to
+#define NUMPIXELS      19 // Number of LEDs in the strip
+
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+unsigned long lightUpTime = 0;  // To track when the LED lit up
+const unsigned long LED_ON_DURATION = 10000;  // 10 seconds
+
+unsigned long lastSendTime = 0;
+const unsigned long sendInterval = 15000; // 15 seconds
+
+const int buttonPin = 2;    // Pin connected to the copper foil button
+unsigned long pressStartTime = 0; // Variable to store the time when the button is pressed
+
+
+ // Variable to store the duration of the button press (step duration)
+int pressCount = 0;        // Variable to keep track of the number of button presses
+int combinedPressCount = 0; // Variable to keep track of the combined count of both buttons
+
+
+const int button2Pin = 3;  // Choose an appropriate unused pin, e.g., 3
+unsigned long press2StartTime = 0; 
+// unsigned long step2Duration = 0;
+int press2Count = 0;
+const int RESET_THRESHOLD = 10; // Adjust this value as needed
+
+
+const char* host = "api.thingspeak.com";
+const char* apiKey = "1VRREXWO4211YP3E"; 
+WiFiClient wifi;
+HttpClient client(wifi, host, 80);
+
+// Variables for capacitor voltages
+const int Vin = A0;
+const int Vout = A2;
+float capVolt = 0;
+float cap2Volt = 0;
+
+unsigned long lastResetTime = 0; // Variable to store the last time the press count was reset
+const unsigned long resetInterval = 10800000;  // 3 hours in milliseconds
+
+// LED pin
+const int ledPin = 5;
+
+
+// Function prototypes
+void connectToWiFi();
+void sendDataToThingSpeak(int pressCount, float capVolt, float cap2Volt, int press2Count, int combinedPressCount);
+
+void indicateWiFiStatus();
+float calculateVoltage(int pin);
+
+void setup() {
+  strip.begin();  // Initialize the LED strip
+  strip.show();   // Initialize all pixels to 'off'
+
+  pinMode(buttonPin, INPUT_PULLUP);  // Set the button pin as INPUT_PULLUP to enable the internal pull-up resistor
+  pinMode(button2Pin, INPUT_PULLUP);
+  pinMode(ledPin, OUTPUT); // Set pin 5 as an OUTPUT for the LED
+  
+
+  Serial.begin(9600);
+  connectToWiFi();
+  Serial.println("Connected to WiFi");
+  Serial.print("IP address: ");
+  Serial.println(WiFi.localIP());
+
+  // Initialize EEPROM to zero for press count
+ // EEPROM.write(0, 0); // Assuming the press count is stored in EEPROM address 0
+
+  // Read the press count from EEPROM on startup
+ // pressCount = EEPROM.read(0); // Assuming the press count is stored in EEPROM address 0
+  
+  //EEPROM.write(1, 0);  // Assuming the second button's press count is stored in EEPROM address 1
+ // press2Count = EEPROM.read(1); // Read the second button's press count from EEPROM on startup
+
+  // Initialize the last reset time to the current time
+  //lastResetTime = millis();
+
+  // Read capacitor voltages
+  capVolt = calculateVoltage(Vin);
+  cap2Volt = calculateVoltage(Vout);
+ sendDataToThingSpeak(pressCount, capVolt, cap2Volt, press2Count, combinedPressCount);
+
+
+}
+void loop() {
+  // Read the state of the button
+  int buttonState = digitalRead(buttonPin);
+
+  // Check if the button is pressed
+  if (buttonState == LOW) {
+    if (pressStartTime == 0) {
+      // Button was just pressed, record the start time
+      pressStartTime = millis();
+      Serial.println("Button pressed! Step detected.");
+      
+      // Increment the press count
+pressCount++;
+combinedPressCount = pressCount + press2Count;
+updateLEDs(combinedPressCount);}
+
+
+if (combinedPressCount >= 65) {
+  combinedPressCount = 0;  // Reset the combinedPressCount
+  resetLEDs();             // Reset the LED sequence
+
+
+    }
+  } else {
+    // Button is released, calculate the duration it was pressed and reset the pressStartTime
+    if (pressStartTime != 0) {
+      Serial.print("Press count: ");
+      Serial.println(pressCount);
+      Serial.print("Combined press count of both buttons: ");
+      Serial.println(combinedPressCount);
+
+      pressStartTime = 0; // Reset pressStartTime for the next press
+
+      // Store the updated press count to EEPROM
+      // EEPROM.write(0, pressCount); // Assuming the press count is stored in EEPROM address 0
+    }
+  }
+
+// Read the state of the second button
+int button2State = digitalRead(button2Pin);
+
+// Check if the second button is pressed
+if (button2State == LOW) {
+    if (press2StartTime == 0) {
+      press2StartTime = millis();
+      Serial.println("Second button pressed! Step detected.");
+press2Count++;
+combinedPressCount++;
+updateLEDs(combinedPressCount);
+    }
+} else {
+    if (press2StartTime != 0) {
+      Serial.print("Press count for second button: ");
+      Serial.println(press2Count);
+      Serial.print("Combined press count of both buttons: ");
+      Serial.println(combinedPressCount);
+      press2StartTime = 0;
+      //EEPROM.write(1, press2Count); // Assuming the second button's press count is stored in EEPROM address 1
+    }
+
+    if (combinedPressCount >= 9) {
+      unsigned long currentTime = millis();
+
+        // If it's the first time combinedPressCount reached 190, record the time
+    if (combinedPressCount == 9 && lightUpTime == 0) {
+        // Light up the LED strip fully
+        for (int i = 0; i < NUMPIXELS; i++) {
+            strip.setPixelColor(i, strip.Color(0, 255, 0));  // Fully lit LED (yellow in this case)
+        }
+        strip.show();}
+        
+        // Start the timer
+        lightUpTime = millis();
+    }
+
+    // Check if the LED strip should be turned off after the specified duration
+    if (lightUpTime != 0 && (millis() - lightUpTime >= LED_ON_DURATION)) {
+        // Reset after 10 seconds
+        combinedPressCount = 0;
+        lightUpTime = 0;
+
+        // Turn off the LED strip
+        for (int i = 0; i < NUMPIXELS; i++) {
+            strip.setPixelColor(i, strip.Color(0, 0, 0));  // Turn off the LED
+        }
+        strip.show();
+    }
+    
+}
+
+  // Send data to ThingSpeak every 30 seconds
+  if (WiFi.status() == WL_CONNECTED && millis() - lastSendTime >= sendInterval) {
+    // Turn on the LED briefly (about 0.1 seconds) when successfully connected to WiFi
+    digitalWrite(ledPin, HIGH);
+    delay(100);
+    digitalWrite(ledPin, LOW);
+
+    // Read capacitor voltages
+    capVolt = calculateVoltage(Vin);
+    cap2Volt = calculateVoltage(Vout);
+    sendDataToThingSpeak(pressCount, capVolt, cap2Volt, press2Count, combinedPressCount);
+
+
+    lastSendTime = millis(); // Reset the last send time
+  }
+
+  // Reset press count every 3 hours
+  if (millis() - lastResetTime >= resetInterval) {
+    pressCount = 0; // Reset the press count
+   // EEPROM.write(0, pressCount); // Store the reset press count to EEPROM
+    lastResetTime = millis(); // Reset the last reset time
+    press2Count = 0; // Reset the press count for the second button
+    //EEPROM.write(1, press2Count); // Store the reset press count for the second button to EEPROM
+  }
+
+  // Add a small delay to avoid bouncing (optional)
+  delay(100);
+
+  // Indicate WiFi status
+  indicateWiFiStatus();
+}
+void updateLEDs(int count) {
+  int ledsToLight = count / 3; // Determine how many LEDs to light up
+  int brightness = (count % 3) * 25; // Determine the brightness of the current LED being "filled"
+
+  int redThreshold = NUMPIXELS / 3;      // 1/3 of the LEDs
+  int yellowThreshold = 2 * NUMPIXELS / 3; // 2/3 of the LEDs
+
+  for(int i=0; i<NUMPIXELS; i++) {
+    if(i < ledsToLight) {
+      if (i < redThreshold) {
+        // Red Phase
+        strip.setPixelColor(i, strip.Color(255, 0, 0));
+      } else if (i < yellowThreshold) {
+        // Yellow Phase
+        strip.setPixelColor(i, strip.Color(255, 255, 0));
+      } else {
+        // Green Phase
+        strip.setPixelColor(i, strip.Color(0, 255, 0));
+      }
+    } else if (i == ledsToLight) {
+      // This is the LED that's currently being "filled"
+      if (i < redThreshold) {
+        // Red Phase
+        strip.setPixelColor(i, strip.Color(brightness, 0, 0));
+      } else if (i < yellowThreshold) {
+        // Yellow Phase
+        strip.setPixelColor(i, strip.Color(brightness, brightness, 0));
+      } else {
+        // Green Phase
+        strip.setPixelColor(i, strip.Color(0, brightness, 0));
+      }
+    } else {
+      strip.setPixelColor(i, strip.Color(0, 0, 0)); // LEDs after the current one are off
+    }
+  }
+  strip.show();
+}
+void resetLEDs() {
+  for (int i = 0; i < NUMPIXELS; i++) {
+    strip.setPixelColor(i, strip.Color(0, 0, 0)); // Turn off all LEDs
+  }
+  strip.show();  // Update the LED strip
+}
+
+
+float calculateVoltage(int pin) {
+  return (5.0 / 1023.0) * analogRead(pin);
+}
+
+void sendDataToThingSpeak(int pressCount, float capVolt, float cap2Volt, int press2Count, int combinedPressCount)
+ {
+  // Keep the LED on while sending data to ThingSpeak
+  digitalWrite(ledPin, HIGH);
+
+String url = String("/update?api_key=") + apiKey +
+             "&field1=" + String(capVolt, 5) +
+             "&field2=" + String(cap2Volt, 5) +
+             "&field3=" + String(pressCount) +
+             "&field4=" + String(press2Count) +
+             "&field5=" + String(combinedPressCount);  
+
+  client.get(url);
+  int statusCode = client.responseStatusCode();
+  String response = client.responseBody();
+  
+  Serial.print("Sending Capacitor Voltage (A0): ");
+  Serial.println(capVolt);
+  Serial.print("Sending Capacitor2 Voltage (A2): ");
+  Serial.println(cap2Volt);
+  Serial.print("Sending Press Count: ");
+  Serial.println(pressCount);
+  
+
+  Serial.print("Status code: ");
+  Serial.println(statusCode);
+  Serial.print("Response: ");
+  Serial.println(response);
+
+
+  // Turn off the LED after data is sent
+  digitalWrite(ledPin, LOW);
+}
+
+void connectToWiFi() {
+  int retries = 0;
+  const int maxRetries = 10;
+  
+  while (WiFi.status() != WL_CONNECTED && retries < maxRetries) {
+    WiFi.begin(ssid, password);
+    Serial.println("Connecting to WiFi...");
+    delay(500);
+    retries++;
+  }
+
+  if (retries == maxRetries) {
+    Serial.println("Failed to connect to WiFi after maximum retries.");
+    // You can add more actions here, such as powering off the Wi-Fi module for a few seconds
+    // before retrying the connection.
+    WiFi.disconnect(); // Disconnect from the Wi-Fi network (optional)
+    delay(2000); // Wait for 2 seconds before retrying
+    connectToWiFi(); // Retry connecting to Wi-Fi
+  }
+}
+
+void indicateWiFiStatus() {
+  if (WiFi.status() == WL_CONNECTED) {
+    digitalWrite(ledPin, HIGH); // Turn on the LED when WiFi is connected
+  } else {
+    // Blink the LED when WiFi is trying to connect
+    static unsigned long lastBlinkTime = 0;
+    const unsigned long blinkInterval = 1000; // Blink every 1 second
+    if (millis() - lastBlinkTime >= blinkInterval) {
+      lastBlinkTime = millis();
+      digitalWrite(ledPin, !digitalRead(ledPin)); // Toggle the LED state
+    }
+  }
+}
