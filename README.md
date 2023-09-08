@@ -61,9 +61,12 @@ In the 'Inspiration' segment, reference was made to the pioneering work of the P
 4.1 Fabrication Work
 
 Layers of the tile: 
+![Diagram 1 HarvestWalk Piezo Circuit Layers](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/7aa8df6b5083085d6f1d4e4a56296f210bd80c80/Project%20Figures%20Tables%20and%20Diagram/Diagram%201%20HarvestWalk%20Piezo%20Circuit%20Layers.png)
+
 
 4.2 Iteration 1
 Firstly, construct the initial version of the tile using 20 piezo discs. Proceed to build the bridge rectifier (See Figure 2) in order to convert the AC voltage to DC voltage (See Diagram 1), then use a multimeter to measure the amount of DC voltage output (See Figure 3). Confirm that the tile is able to generate energy successfully.
+![Figure 2-3 and Diagram 2 Role of Bridge Rectifier](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/7aa8df6b5083085d6f1d4e4a56296f210bd80c80/Project%20Figures%20Tables%20and%20Diagram/Figure%202-3%20and%20Diagram%202%20Role%20of%20Bridge%20Rectifier.png)
 
 
 In an experiment, a tile equipped with 20 piezo discs was tested for its voltage generation capabilities. The results showed that the tile could produce a voltage of 1.200 volts when connected to a bridge rectifier and a 1000 microfarads capacitor. However, a significant challenge in harnessing energy from piezoelectric materials is the conversion from AC to DC voltage. Using a standard bridge rectifier for this conversion results in a substantial energy loss. Consequently, it was deduced that a more efficient circuit would significantly enhance piezoelectric energy harvesting (Covaci and Gontean, 2021). 
@@ -84,6 +87,7 @@ In the realm of electronics, voltage dividers play a pivotal role in adjusting v
 Vout = Vin x (R2 / (R1 + R2))
 Where Vout is the output voltage, Vin is the input voltage, R1 is 30kΩ, and R2 is 15Ω.
 Given the scenario of reading an AC voltage from a piezo disc that can reach up to 20 volts using an Arduino with a 5-volt limit, a voltage divider becomes indispensable. By judiciously selecting the resistor values, one can ensure that the Arduino reads a voltage within its permissible range, even when the piezo disc produces its maximum output.
+![Figure 4-5](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/7aa8df6b5083085d6f1d4e4a56296f210bd80c80/Project%20Figures%20Tables%20and%20Diagram/Figure%204-5.png)
 
 
 
