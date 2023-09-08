@@ -29,7 +29,7 @@ Piezoelectric technology is widely recognised for its potential as a sustainable
 2.3 Applications of Piezoelectric Energy Harvesting
 Piezoelectricity refers to the property of certain materials to generate an electrical charge when mechanically stressed. This effect is detailed in Shreeshayana et al. (2017), which provides an in-depth explanation of how a piezoelectric generator functions, including a diagram of the piezoelectric effect see figure 1 for the detailed diagram.
 
-
+https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/b973fc076b7be44e6545e34c5a0c585f3008376f/Project%20Figures%20Tables%20and%20Diagram/Figure%201%20Piezoelectric%20Effect.png
 
 
 
