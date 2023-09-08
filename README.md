@@ -305,6 +305,9 @@ The flowchart outlines the logic of an Arduino sketch designed to control a stri
 
 
 **9. Electronic Component Choices**
+
+
+
 ![Table 9 Electronic Component](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/ad374ace69ed69d8ef3663eaa5316ba4c4104757/Project%20Figures%20Tables%20and%20Diagram/Table%209%20Electronic%20Component.png)
 
  
@@ -315,7 +318,11 @@ Influenced by Hudson-Smith's Neopixel Barometer, the Capacitometer was developed
 The Capacitometer is an essential tool for gauging and monitoring the energy output of the tile, offering a lucid perspective on its performance. As can be seen in the segment explaining the code, the brightness of the LEDs and the lights are activated when two floor pressure buttons are pressed. Both the buttons and the LEDs are connected to an Arduino board. Upon detecting a press on one of the pressure buttons, the LED increases its brightness level. There are 58 LEDs in total. When the button is pressed for the first time, the first LED lights up at its lowest brightness, and with subsequent presses on the floor's pressure buttons, the brightness escalates.
 
 Designed to visually represent the energy stored in a 2200µF capacitor, this display is grounded in the mathematical logic of the capacitor's charging sequence, as detailed in the calculations segment. It's timed impeccably for exhibition attendees to observe and interact with in real-time see video 3 of 2200µF capacitor charging.
+
+
 [![Video 3](https://img.youtube.com/vi/_R7w6d5AlKY/0.jpg)](https://youtu.be/_R7w6d5AlKY)
+
+
 
 The Capacitometer is mounted on laser-cut wood, with each of its 58 LEDs fitting snugly into a 2mm-edged hole,  See figure 22 below. A transparent acrylic layer, fashioned using laser technology, encases the device. The meter's scale spans from 0 to 730mC, indicative of the capacitor's charge, adjusted from 726mC for clarity and ease of understanding.
 To ensure a harmonious visual presentation, the Capacitometer's stand has been crafted to echo the aesthetic of the HarvestWalk tile.
