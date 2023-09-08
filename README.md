@@ -267,11 +267,14 @@ The code for the project involving the hardware Arduino Rev 2 WiFi was initially
 
 This segment of the code revolves around voltage measurements and data transmission. The primary objective is to acquire precise DC voltage readings both across the input (Vin) and output (Vout) of the LTC-3588-1 chip's capacitor See sections 1-2 in table 4 below. Additionally, the code endeavors to measure the AC voltage at the output (Vout piezo) originating from the piezoelectric tile See section 3 in the table 4 below. Subsequently, the gathered voltage data is intended to be uploaded to ThingSpeak, an IoT platform, for store and analysis the data.
 Access to the code chapter 1
+- [Exhibition Code (Without reading Voltages (in and out) and without sending data to ThinkSpeak)](https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/7295c67905b1bed97f45a55a4a08c93202d78824/code/Exhibition%20Code%20%20(Without%20reding%20Voltages%20(in%20and%20out)%20and%20without%20sending%20data%20to%20ThinkSpeak))
+
 
 **8.2 Chapter 2: Energy Visualization and Gamification**
 
 In this phase, the focus shifts toward creating an engaging exhibition experience. The aim is to communicate the previously collected voltage data effectively. The number of button presses—registered from both the right and left buttons—serves as an innovative representation of the energy stored in the 2200 microfarad capacitor. This visual portrayal is facilitated by illuminating a set of 56 LEDs, thus offering visitors an intuitive understanding of energy accumulation. Furthermore, the incorporation of a piezo tile demonstrates the concept of energy generation via mechanical force, aligning with the project's educational aspirations.
 Access to the code chapter 2
+- [Press Buttons and voltage measurements](https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/7295c67905b1bed97f45a55a4a08c93202d78824/code/Press%20Buttons%20and%20voltage%20measurements)
 ![Table 4 Code Description](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%204%20Code%20Description.png)
 
 ![Table 5 Library Description](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%205%20Library%20Description.png)
