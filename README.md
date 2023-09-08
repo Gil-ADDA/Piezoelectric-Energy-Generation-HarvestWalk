@@ -114,24 +114,25 @@ Given the scenario of reading an AC voltage from a piezo disc that can reach up 
 The circuit design was inspired by an analysis of "Powering Lights with Piezoelectric Energy-Harvesting Floors" by Puscasu et al. (2018). The design detailed in the article appeared amenable for implementation. The tile circuit measures 300 by 300 (refer to imageX). For the HarvestWalk project, a total of 100 piezo discs were utilised, all connected in parallel. These discs, with their positive and negative terminals, employ copper foil to harness energy, reminiscent of an AC voltage circuit. Each disc is situated on copper foil at the piezo's negative terminal and the silicon piece. Above the piezo, a perforated sticker is placed, allowing the copper foil to access the positive terminal. This is further covered with a copper foil strip, which is subsequently protected by an additional layer to counteract wear and tear from repeated impacts (refer to image!). Each terminal is connected using a distinct cable, ensuring all piezos are linked in parallel across both positive and negative terminal layers. All copper foil strips are connected to a single output, which then links to the ltc3588-1 harvesting chip (See Figure 6).
 Beneath the tile, a layer of flexible wood was introduced, allowing the piezo transducer to deflect by 2mm when stepped upon. This was further protected by an acrylic layer from above. Subsequent research underscored the efficacy of energy harvesting with piezoelectricity, especially when employing the SSHI (Synchronized Switch Harvesting on Inductor) method. This revelation prompted the exploration of the LTC-3588-1 chip by Linear Technology Analog Devices, which boasts a Low-Loss Full-Wave Bridge Rectifier and an impressive 90% efficiency (Analog Devices, n.d.). 
 
+![Figure 6 LTC-3588-1 Chip](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/58f8cb5b9eed0f05e20cc7eaa3727496cc4d78dd/Project%20Figures%20Tables%20and%20Diagram/Figure%206%20LTC-3588-1%20Chip.png)
+ ![Figure 7-8](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/58f8cb5b9eed0f05e20cc7eaa3727496cc4d78dd/Project%20Figures%20Tables%20and%20Diagram/Figure%207-8%20.png)
 
- 
- 
- 
- 
- 
- 
 
  
 ** 4.4 Iteration 3**
 In this advanced iteration of the tile, a total of 100 piezo discs are utilised, segmented into 40 discs measuring 35mm and 60 discs at 27mm (see Figure 9). The foundational layer of the circuit is a transparent, flexible plastic, precisely laser-cut to a 300mm by 300mm dimension. Atop this lies a copper foil, specifically allocated for the negative terminal. Once the black wire is soldered to this terminal, the piezo discs are methodically placed over it. To prevent any unintended contact with the positive terminal of the piezo, a laser-cut transparent sticker, perforated for precision, is applied (see Figure 10). Following this, the positive terminal is sheathed with copper foil, and the red wire is affixed via soldering. To ensure the durability of the assembly, a protective transparent sticker is wrapped around the entire circuit, shielding the copper foil.
 
- 
+![Figure 9](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/58f8cb5b9eed0f05e20cc7eaa3727496cc4d78dd/Project%20Figures%20Tables%20and%20Diagram/Figure%209.png)
+
+![Figure 10](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/58f8cb5b9eed0f05e20cc7eaa3727496cc4d78dd/Project%20Figures%20Tables%20and%20Diagram/Figure%2010.png)
+
+
  
  
  Transitioning to the acrylic circuit tiles, they are seamlessly interfaced with the LTC-3588-1 via PZ1 and PZ2, all housed on a wooden box tile. The integration of the LTC-3588-1 onto a PCB is complemented by the addition of capacitors: a 10 µF on the input and a 2200 µF on the output.
 
 The subsequent phase of the assembly process involves the integration of auxiliary circuit components. This includes the Arduino and a pair of push buttons. These buttons are distinctively crafted from two PCB boards with an interposed sponge and a modicum of soldering see figure 11 below. On one side of the button, a pin is connected to the GND, whilst the other side is affixed to a digital pin. To be precise, the primary button is connected to both the GND and the digital pin number 2. Its counterpart, the secondary button, is analogously connected to the GND and digital pin number 3. Additionally, the Capacitometer wires are incorporated into this configuration, establishing connections to the Arduino's digital pin number 6, the GND pin, and, ultimately, the 5V pin. For a visual elucidation and further inspiration, one might consult the image below and reference the DIY Force Sensitive Resistor (FSR) project, which served as a foundational inspiration for this endeavour (McDonald, 2008)
+![Figure 11](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/dcd527dce74ef9285a8fc9ed8a959074b1aca608/Project%20Figures%20Tables%20and%20Diagram/Figure%2011.png)
 
 
 **4.5 Fabrication Process: Utilising Laser Cutting Techniques**
@@ -139,6 +140,8 @@ The subsequent phase of the assembly process involves the integration of auxilia
 Design & Software: The primary method utilised for the fabrication of the 'HarvestWalk' project was laser cutting. This technique was chosen for its precision and its compatibility with the Fusion 360 design software. The design was meticulously crafted in Fusion 360, ensuring its suitability for the laser-cutting process. It was then exported in the DXF format to ensure seamless integration with the laser cutting apparatus.
 4.5.1 Material Considerations
 In the initial stages of the project, an attempt was made to incorporate a rug or rubber mat as a covering for the piezoelectric circuit to simulate a more realistic environment. However, the decision to modify the design was driven by aesthetic considerations. The aim was to seamlessly integrate a rug or rubber mat with the piezo flooring, ensuring that the entire electrical circuit, inclusive of the Arduino board and button wires, could be neatly and aesthetically housed in one place. For visual references, please see the Figures 12 and 13 below.
+![Figure 12-13](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/dcd527dce74ef9285a8fc9ed8a959074b1aca608/Project%20Figures%20Tables%20and%20Diagram/Figure%2012-13.png)
+
 
 ** 4.5.2 Dimensions **
 The base, measuring 400mm x 400mm, supports four wooden sides or walls. These walls, in turn, support a cover that features two holes designed for the placement of pressure buttons. Atop this cover sits the piezo floor with its electrical circuit. An additional frame, measuring 400mm x 400mm, is placed on top of the piezo floor. This frame, with its central void measuring 350mm x 350mm, was added not only to allow exhibition attendees to view the piezo discs but also to ensure the stability of the electrical circuit. The circuit was observed to move frequently on the floor, which could have potentially damaged it and inconvenienced users during the exhibition.
@@ -151,7 +154,8 @@ Gorilla wood glue
 Laser Cutting Execution: 
 Utilising the laser cutting machine, precise incisions were made on the 12-millimetre wood. The design blueprint incorporated spaces specifically for the piezo discs elegantly showcased within the top frame. Engravings on this frame include "Charge me", "Jump on and bounce for renewable energy", and "HarvestWalk" see figure 14 below.
 
- 
+ ![Figure 14](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/dcd527dce74ef9285a8fc9ed8a959074b1aca608/Project%20Figures%20Tables%20and%20Diagram/figure%2014.png)
+
 
 
 
@@ -166,16 +170,14 @@ Cable Management: Strategically positioned holes were incorporated for efficient
 Additionally, a transparent acrylic piece, 5mm thick, was laser-cut in the shape of a battery and engraved with indicators for 25%, 50%, 75%, and 100% battery charge.
 Stand: The stand, visible in the accompanying image, was crafted from recycled workshop materials. This was done to ensure that the LED and the floor were at the same height, providing a uniform appearance for the exhibition.
 
-
-
-
-
+![Figure 15](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/dcd527dce74ef9285a8fc9ed8a959074b1aca608/Project%20Figures%20Tables%20and%20Diagram/Figure%2015.png)
 
 
 **5. Design and Schematic of HarvestWalk exhibition Circuit**
 This schematic represents a modified version of a circuit designed for an exhibition. Several modifications were made to simplify the original design. The circuit includes an LED strip consisting of 58 LEDs. It is important to note that the LTC-3588 chip and the Arduino Uno WiFi Rev 2 are not interconnected in this design. Additionally, the LTC circuit includes a switch, which is connected to a small LED. However, the representation of this switch and LED on the schematic is quite small and may be difficult to discern
 
 
+![Figure 16](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/dcd527dce74ef9285a8fc9ed8a959074b1aca608/Project%20Figures%20Tables%20and%20Diagram/Figure%2016.png)
 
 
 **6. Experiments **
@@ -200,6 +202,7 @@ Link for the experiment see video 2 with the capacitor 0.22 F
 
 
 
+![Figure 17 AC Voltage Measurements of Tile Version 2 Using Oscilloscope](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/dcd527dce74ef9285a8fc9ed8a959074b1aca608/Project%20Figures%20Tables%20and%20Diagram/Figure%2017%20AC%20Voltage%20Measurements%20of%20Tile%20Version%202%20Using%20Oscilloscope.png)
 
 
 
@@ -217,6 +220,8 @@ I = 470 * 10^-6 F * (3.3 V / 1 s) = 0.0005 A.
 This calculation yielded a current of 0.0005 amperes, which is equivalent to 0.5 milliamps. This analysis elucidates the relationship between voltage, capacitance, and current, providing a deeper understanding of the electrical behaviour exhibited in piezo tile experiments. The insights obtained from this are invaluable for the optimisation of devices in practical applications.
 
 For a visual representation of the step-by-step calculation process, please refer to the whiteboard illustration provided in Figure 18. Additionally, the calculations were cross-verified using the online tool.
+
+![Figure 18 Calculate the Amount of Charge](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/dcd527dce74ef9285a8fc9ed8a959074b1aca608/Project%20Figures%20Tables%20and%20Diagram/Figure%2018%20Calculate%20the%20Amount%20of%20Charge.png)
 
 
 **7.2 Measurement Tools Employed**
