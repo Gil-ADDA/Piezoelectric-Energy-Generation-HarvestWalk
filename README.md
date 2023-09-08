@@ -1,5 +1,5 @@
 
-** Abstract**
+**** Abstract****
 
 This research delves into the design of a unique energy harvesting system using piezoelectric technology, primarily for indoor use, targeting the power needs of Internet of Things (IoT) devices. The aim is to utilise ambient mechanical energy, like human movement, to produce sustainable power.
 
@@ -10,7 +10,7 @@ Central to this research is the creation of a piezoelectric energy harvesting pr
 Additionally, the project introduces an interactive Capacitometer display, visually illustrating the energy accumulation and enhancing public understanding of piezoelectric principles. This initiative seeks to heighten awareness of energy harvesting technologies and their sustainability role. In summary, the study accentuates the value of piezoelectric energy harvesting for indoor settings, especially in bolstering IoT device power and addressing battery constraints. It adds to the renewable energy discourse, proposing a practical solution to improve the efficiency of indoor IoT devices.
 
  
-** Introduction **
+**** Introduction ****
 
 This research investigates the potential application of piezoelectric tiles to harvest energy from footsteps in indoor environments. The study aims to develop a prototype system that can demonstrate the feasibility of powering Internet of Things (IoT) devices using energy generated from human movement indoors.
 
