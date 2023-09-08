@@ -196,6 +196,7 @@ Further academic research on energy conversion and harvesting from piezoelectric
 
 After successfully powering the LED, the next step was to find microprocessors that could read data, such as temperature or humidity, and communicate via Bluetooth. Due to the limited time available to complete the project and the need to prepare for an exhibition, this result was finalised. However, several studies have demonstrated success in powering electrical circuits through the movement of piezoelectric materials, which will be elaborated upon in the discussion section.
 
+![Table 1 Experiments](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%201%20Experiments.png)
 
 
 Link for the experiment see video 2 with the capacitor 0.22 F
@@ -232,12 +233,14 @@ Power Measurement: Determining the number of watts.
 Energy Measurement: Assessing the amount of energy in joules.
 Current Measurement: Gauging the amount of current in milliamperes.
 
+![Table 2 Tools and Calculation Description](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%202%20Tools%20and%20Calculation%20Description.png)
 
 
 **7.3 Experimental Procedure**
 The experiment involved participants jumping on the tile. The duration of the activity, the number of jumps required to charge the capacitor to 3.3 volts, and other pertinent details will be discussed in subsequent sections.
 
 
+![Table 3 Calculation Values](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%203%20Calculation%20Values.png)
 
 
 Capacitor Charging Experiment: Summary of Results
@@ -265,7 +268,16 @@ Access to the code chapter 1
 
 In this phase, the focus shifts toward creating an engaging exhibition experience. The aim is to communicate the previously collected voltage data effectively. The number of button presses—registered from both the right and left buttons—serves as an innovative representation of the energy stored in the 2200 microfarad capacitor. This visual portrayal is facilitated by illuminating a set of 56 LEDs, thus offering visitors an intuitive understanding of energy accumulation. Furthermore, the incorporation of a piezo tile demonstrates the concept of energy generation via mechanical force, aligning with the project's educational aspirations.
 Access to the code chapter 2
+![Table 4 Code Description](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%204%20Code%20Description.png)
 
+![Table 5 Library Description](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%205%20Library%20Description.png)
+
+![Table 6 Button Press Variables Schema in the System](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%206%20Button%20Press%20Variables%20Schema%20in%20the%20System.png)
+
+
+![Figure 19 and Table 7](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Figure%2019%20and%20tabel%207.png)
+
+![Figure 20-21 and Table 8](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Figure%2020-21%20and%20table%208%20.png)
 
 **8.5 Algorithm of the HarvestWalk - Exhibition code**
 The flowchart outlines the logic of an Arduino sketch designed to control a strip of LEDs based on the number of button presses. The sketch operates in a continuous loop, initially checking the state of the first button. If pressed, the program updates the press count, combined press count, and the LED strip accordingly. Subsequently, the program checks if the cumulative count of both button presses has reached a predefined threshold (260). If so, it resets the counters and switches off the LEDs. The program then proceeds to check the state of the second button, following a similar logic. If the second button is pressed, the program updates the press2 count, combined press count, and the LED strip. The program then checks again if the cumulative count has reached the threshold, and if so, resets the counters and switches off the LEDs. This process continues indefinitely, providing a dynamic and interactive way to control the LED strip see diagram 3 below.
