@@ -6,7 +6,7 @@
 #include <Adafruit_NeoPixel.h>
 
 #define PIN            6  // Define the pin where the data line is connected to
-#define NUMPIXELS      19 // Number of LEDs in the strip
+#define NUMPIXELS      58 // Number of LEDs in the strip
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 unsigned long lightUpTime = 0;  // To track when the LED lit up
