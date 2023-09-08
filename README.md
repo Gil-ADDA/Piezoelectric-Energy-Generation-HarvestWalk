@@ -142,7 +142,11 @@ The subsequent phase of the assembly process involves the integration of auxilia
 
 Design & Software: The primary method utilised for the fabrication of the 'HarvestWalk' project was laser cutting. This technique was chosen for its precision and its compatibility with the Fusion 360 design software. The design was meticulously crafted in Fusion 360, ensuring its suitability for the laser-cutting process. It was then exported in the DXF format to ensure seamless integration with the laser cutting apparatus.
 4.5.1 Material Considerations
-In the initial stages of the project, an attempt was made to incorporate a rug or rubber mat as a covering for the piezoelectric circuit to simulate a more realistic environment. However, the decision to modify the design was driven by aesthetic considerations. The aim was to seamlessly integrate a rug or rubber mat with the piezo flooring, ensuring that the entire electrical circuit, inclusive of the Arduino board and button wires, could be neatly and aesthetically housed in one place. For visual references, please see the Figures 12 and 13 below.
+In the initial stages of the project, an attempt was made to incorporate a rug or rubber mat as a covering for the piezoelectric circuit to simulate a more realistic environment. However, the decision to modify the design was driven by aesthetic considerations. The aim was to seamlessly integrate a rug or rubber mat with the piezo flooring, ensuring that the entire electrical circuit, inclusive of the Arduino board and button wires, could be neatly and aesthetically housed in one place. 
+For visual references, please see the Figures 12 and 13 below.
+
+
+
 ![Figure 12-13](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/dcd527dce74ef9285a8fc9ed8a959074b1aca608/Project%20Figures%20Tables%20and%20Diagram/Figure%2012-13.png)
 
 
