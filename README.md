@@ -1,5 +1,5 @@
 
- Abstract
+** Abstract**
 
 This research delves into the design of a unique energy harvesting system using piezoelectric technology, primarily for indoor use, targeting the power needs of Internet of Things (IoT) devices. The aim is to utilise ambient mechanical energy, like human movement, to produce sustainable power.
 
@@ -9,34 +9,8 @@ Central to this research is the creation of a piezoelectric energy harvesting pr
 
 Additionally, the project introduces an interactive Capacitometer display, visually illustrating the energy accumulation and enhancing public understanding of piezoelectric principles. This initiative seeks to heighten awareness of energy harvesting technologies and their sustainability role. In summary, the study accentuates the value of piezoelectric energy harvesting for indoor settings, especially in bolstering IoT device power and addressing battery constraints. It adds to the renewable energy discourse, proposing a practical solution to improve the efficiency of indoor IoT devices.
 
-
-
-Declaration
-I, Gil Adda, affirm that this dissertation is entirely my own work and that I have properly acknowledged all sources utilised from the introduction to the conclusion.
-
-Date: 8 September 2023
-
-Acknowledgements
-Creating this research required a tremendous amount of work, and I received help from numerous individuals throughout the process. I would like to express my gratitude to Dr.Valerio Signorelli, my dissertation supervisor, for his invaluable support throughout the process. His guidance helped me contextualize my work around the needs of indoor running IOT devices, gamify the final project, and visualize the stored energy. He also provided me with helpful feedback on my writing and aided me in navigating the making process.
-
-I would like to thank Dr.Martin de Jode, my informal supervisor, for his invaluable assistance in constructing the electrical circuit. Thanks to him, I learned how to measure the electrical engineering circuit professionally and figure out what parts would need to make this project work.
-
-I want to express my gratitude to the Connected Environments team members who played a crucial role in creating this piece. Special thanks to Dr.Duncan Wilson, Prof.Andrew Hudson-Smith, Dr.Leah Lovett, Dr.Steven Gray, August Weinbren, and Dhruv Kumar for their valuable critiques throughout the development process.
-Regarding building all the versions big thanks to Daniel Steadman for teaching me how to use fabrication tools like laser cutting and 3D printing. His guidance was crucial in building different versions of the HarvestWalk device.
-I want to express my gratitude to all my classmates who joined me in jumping on the tiles to conduct the experiments. Your support, inspiration, and encouragement were truly invaluable. Thank you.
-
-Finally, I would like to extend my sincere appreciation to the esteemed Urban Lab team for their unwavering support throughout the entirety of the exhibition, offering their ideas and critiques.
-
-Thank you all.
-
-
-
-
  
- 
- 
- 
- Introduction 
+** Introduction **
 
 This research investigates the potential application of piezoelectric tiles to harvest energy from footsteps in indoor environments. The study aims to develop a prototype system that can demonstrate the feasibility of powering Internet of Things (IoT) devices using energy generated from human movement indoors.
 
@@ -47,21 +21,13 @@ Through rigorous experimentation, this study aims to design, develop and evaluat
 The research outcomes will contribute knowledge regarding sustainable power sources for IoT devices deployed indoors. If proven successful, the piezoelectric tile technology could potentially enhance energy efficiency in buildings and reduce the environmental impact of frequent battery replacement. The project seeks to provide a practical solution that promotes smart infrastructure through renewable energy principles.
 
 
-Literature Review
+**Literature Review**
 2.1 Introduction to Piezoelectric Tiles for Energy Harvesting
 The use of piezoelectric tiles for indoor energy harvesting is a promising yet challenging approach to sustainable power generation. The concept of converting mechanical energy from footsteps into electrical energy, while innovative, is a familiar idea (Li and Strezov, 2014; Sharpes et al., 2016). The utilisation of a piezoelectric idea as a plentiful but previously untapped energy resource dates back to as early as 1880.  It was pioneered by the Curie brothers, Pierre and Jacques, who laid the groundwork for this transformative approach(Woodford, 2009). 
 2.2 The Potential of Piezoelectric Technology
 Piezoelectric technology is widely recognised for its potential as a sustainable energy source for small devices (Sharpes et al., 2016; Covaci and Gontean, 2019). Various strategies, such as the implementation of piezoelectric tiles and floors, have been examined to harness mechanical vibrations and transform them into electrical energy (Sharma et al., 2022; Hwang et al., 2015).
 2.3 Applications of Piezoelectric Energy Harvesting
 Piezoelectricity refers to the property of certain materials to generate an electrical charge when mechanically stressed. This effect is detailed in Shreeshayana et al. (2017), which provides an in-depth explanation of how a piezoelectric generator functions, including a diagram of the piezoelectric effect see figure 1 for the detailed diagram.
-
-
-
-
-
-
-
-
 
 
 
@@ -90,7 +56,7 @@ After conducting extensive research and discovering that it is feasible to charg
 Ultimately, the concept that the piezo tile has the potential to generate sufficient energy to power IoT devices resonates with me the most. (Paul et al., 2015)
 
 
- Methodology 
+** Methodology **
 In the 'Inspiration' segment, reference was made to the pioneering work of the Pavegen company, which subsequently instigated an in-depth investigation into piezoelectricity. The paramount aim of this scholarly endeavour is to extract energy from pedestrian movements within enclosed spaces. This extracted energy is destined to energise an advanced microcontroller, equipped with sensors specifically for temperature and infrared motion detection. The data, once collated, is designed to be conveyed through established IoT mediums, including but not limited to Bluetooth and Wi-Fi. The 'Methodology' section offers a detailed chronicle of the three distinct prototype iterations, coupled with an analytical breakdown of the mathematical formulations utilised. This section also provides insight into the assembly of the capacitometer and the mechanisms of energy transmutation
 4.1 Fabrication Work
 
@@ -183,13 +149,13 @@ Stand: The stand, visible in the accompanying image, was crafted from recycled w
 
 
 
-5. Design and Schematic of HarvestWalk exhibition Circuit
+**5. Design and Schematic of HarvestWalk exhibition Circuit**
 This schematic represents a modified version of a circuit designed for an exhibition. Several modifications were made to simplify the original design. The circuit includes an LED strip consisting of 58 LEDs. It is important to note that the LTC-3588 chip and the Arduino Uno WiFi Rev 2 are not interconnected in this design. Additionally, the LTC circuit includes a switch, which is connected to a small LED. However, the representation of this switch and LED on the schematic is quite small and may be difficult to discern
 
 
 
 
-6. Experiments 
+**6. Experiments **
 6.1 Floor Experiments
 It's essential to note that the experiments involving the floor were carried out by jumping on it. This was done to increase the load on the piezoelectric discs, producing higher vibrations and more strain, aiming to extract the maximum energy within the given time frame. Additionally, some tests were performed on the floor with a rubber mat to simulate real-world conditions Figure 12 above. However, these tests yielded lower energy outputs, leading to the decision to keep the floor exposed to as much vibration and pressure as possible without any intervening layers.
 6.2 Energy Conversion 
@@ -211,7 +177,7 @@ Link for the experiment see video 2 with the capacitor 0.22 F
 
 
 
-7. Calculation
+**7. Calculation**
 7.1 Analysis of Current Flow Through a Capacitor in Piezo Tile Experiment
 
 In the course of our experimentation to assess the efficiency of the piezo tile, a detailed analysis was conducted to determine the current flowing through a capacitor in our experimental setup. The capacitor in question had a capacitance of 470 microfarads and was subjected to a voltage of 3.3 volts. The relationship between current (I), capacitance (C), and voltage (V) is given by the formula:
@@ -253,7 +219,7 @@ The charge transferred to the capacitor can be calculated using the formula Q = 
 The average current associated with charging the capacitor can be calculated using the formula I = Q / t, which gives approximately 38.2 microamperes.
 During the experiment, a participant with a weight of 80 kg performed jumps on a tile. It took 280 jumps to achieve this.
 
-8. Code
+**8. Code**
 The code for the project involving the hardware Arduino Rev 2 WiFi was initially structured to encompass two distinct sections. The first section aimed at reading voltage data from the LTC-3588-1 chip's capacitors input and output and transmitting it to ThingSpeak for storage. However, initial attempts yielded less-than-ideal results, prompting a tailored code adjustment to better meet the needs of the forthcoming exhibition. The second section concentrated on the exhibition itself, necessitating the communication of pre-collected data and creatively visualising energy dynamics through user engagement. Specifically, this involved capturing button presses, which in turn illuminated the concept of energy storage and generation via a mechanical force applied to a piezo tile.
 
 
@@ -273,9 +239,9 @@ Access to the code chapter 2
  8.5 Algorithm of the HarvestWalk - Exhibition code
 The flowchart outlines the logic of an Arduino sketch designed to control a strip of LEDs based on the number of button presses. The sketch operates in a continuous loop, initially checking the state of the first button. If pressed, the program updates the press count, combined press count, and the LED strip accordingly. Subsequently, the program checks if the cumulative count of both button presses has reached a predefined threshold (260). If so, it resets the counters and switches off the LEDs. The program then proceeds to check the state of the second button, following a similar logic. If the second button is pressed, the program updates the press2 count, combined press count, and the LED strip. The program then checks again if the cumulative count has reached the threshold, and if so, resets the counters and switches off the LEDs. This process continues indefinitely, providing a dynamic and interactive way to control the LED strip see diagram 3 below.
 
-
+**9. Electronic Component Choices**
  
- 10. Visualisation and communication
+** 10. Visualisation and communication**
 
 Building the LED-Capacitometer
 Influenced by Hudson-Smith's Neopixel Barometer, the Capacitometer was developed (Hudson-Smith, 2022). This device, often referred to simply as the Capacitometer, utilises LEDs to visualise data, complemented by intricate designs crafted from laser-cut acrylic and wood. The primary motivation behind its creation is to effectively communicate and visualise the energy generated by the HarvestWalk tile. This apparatus seamlessly marries contemporary technology with classical design elements, aiming to render the complex charging data of a capacitor into a format that is both visually compelling and straightforward for any user to comprehend
@@ -288,7 +254,7 @@ To ensure a harmonious visual presentation, the Capacitometer's stand has been c
  
 
  
- 11. Results 
+** 11. Results **
 11.1 Proof of Concept
 As illustrated in Figure 4 see below the block diagram, the operational flow of the piezoelectric energy harvesting system is as follows:
 Initiation: A step on the piezoelectric tile generates mechanical pressure, acting as the system's primary input.
@@ -303,7 +269,7 @@ This sequence underscores the system's capability to transform mechanical stimul
 
 
 
- 12. Discussion
+** 12. Discussion**
 The research has demonstrated the foundational viability of utilising piezoelectric tiles to harvest energy from footsteps to power IoT devices indoors. However, my study did not conclusively prove the capability to power IoT devices, but I was successful in illuminating an LED diode as detailed in the Results section under Proof of Concept. Nonetheless, the literature review suggests that it is indeed possible to achieve this. There are several aspects that could be enhanced to improve the efficiency and performance of the system.
 
 Firstly, to achieve greater energy density, it is advisable to place piezoelectric discs over larger floor areas. The current prototype was restricted to 100 discs in a relatively compact form. Expanding the coverage would generate more cumulative energy from footsteps.
@@ -316,13 +282,13 @@ The experiments conducted have focused on evaluating the fundamental energy harv
 
 
 
-13. Conclusions
+**13. Conclusions**
 This research project has provided valuable insights into the potential of piezoelectric technology for indoor energy harvesting to operate IoT devices. The functioning prototype developed has established the fundamental feasibility of the approach. While current performance is modest, there are multiple avenues to markedly enhance the energy outputs by optimising the piezoelectric tile design and electrical system. With sufficient improvements, the concept could provide a practical sustainable energy solution for low-power smart building applications. The research contributes to knowledge in this emerging application domain and serves as a foundation for additional development. Considerable scope exists for subsequent projects to build on the groundwork established here and implement more sophisticated, higher performance systems. Piezoelectric energy harvesting from human motion offers an exciting paradigm for cleaner, maintenance-free energy to supplement battery usage for indoor electronics and wireless sensor networks.
 
 
 
 
-References 
+**References **
 Analog Devices, n.d. Technical Documentation Data Sheets. Available at: https://www.analog.com/media/en/technical-documentation/data-sheets/35881fc.pdf [Accessed 2 June 2023].
 
 Arduino. (n.d.) UNO WiFi Rev2. Arduino. Available at: https://docs.arduino.cc/hardware/uno-wifi-rev2 (Accessed: 5 July 2023)
@@ -370,237 +336,3 @@ Sodano, H. A., Inman, D. J., & Park, G. (2005). Comparison of Piezoelectric Ener
 Solban, M.M. and Moussa, R.R., 2021. Investigating the potential of using human movements in energy harvesting by installing piezoelectric tiles in Egyptian public facilities. Journal of Engineering Research, 9. Available at: https://doi.org/10.36909/jer.9517 [Accessed 2 June 2023].
 
 Woodford, C., 2009. Piezoelectricity - How does it work? | What is it used for? [WWW Document]. Explain that Stuff. URL http://www.explainthatstuff.com/piezoelectricity.html (Accessed 6.26.23).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
- 
- 
- 
-
-Piezoelectric-Energy-Generation-HarvestWalk-For-IOT 
-The primary goal of this repository is to explore the potential of piezoelectricity for energy generation and develop sustainable solutions for IOT devices. By openly sharing my research findings, experimental setups, component evaluations, and design considerations, I hope to inspire discussions and invite valuable insights from the community
-
-
-Be involved in this repository - researchers, engineers, and enthusiasts interested in piezoelectric energy **are all welcome!** Share your ideas, feedback, and more to help this project reach its full potential. With everyone's help, we can work towards a more sustainable future. No matter your experience, your input is invaluable - so please reach out and contribute via opening issues, email, or any other suggestions!
-
-the piezoelectric tiles can turn steps into energy. Over a year, this energy could replace a portion of electricity usually pulled from the grid. This means less reliance on traditional power sources, which often produce CO2, a greenhouse gas. Plus, it saves money on electricity bills. 
-Besides, these tiles can potentially offer a clean, wire-free solution for powering IoT devices. Imagine a city where foot traffic in public spaces like parks, subway stations, or sidewalks generates power for public IoT devices. 
-
-# Problem statment 
-With the proliferation of IoT devices in indoor environments like homes and offices, providing a sustainable, wireless power source for these devices is a significant challenge. This is particularly relevant for low-power devices such as temperature or humidity sensors and smart switches, which are frequently used in these settings. The problem is compounded by the need to reduce wire clutter and improve aesthetics. This project aims to investigate whether a piezoelectric tile, harvesting energy from regular foot traffic or other mechanical stimuli in these environments, could generate sufficient power to operate these sensors and switches. A key part of this investigation will be to accurately measure the amount of electrical energy each tile generates. 
-
-## Contact Details
-[<img src="https://img.icons8.com/color/48/000000/gmail.png"/>](mailto:giloo1047@gmail.com)
-[<img src="https://img.icons8.com/color/48/000000/linkedin.png"/>](https://www.linkedin.com/in/gil-adda-16385510b/)
-
-# Reserch field
-The reserch filed going to be around urban renewable energy and pizoelectric 
-
-## Potential Component List
-
-The "potential Component List" section contains a comprehensive list of components that will be investigated and considered for piezoelectric energy generation research. The list: 
-- 5 X pizo (piezoelectric materials - what is the best for generate energy?) (Diaphragm)
-
-- Bridge rectifier ( which one is the most suitable?) 
-
-- Energy storage systems - dose Capacitor is the best for that project? 
-
-- Capasitor Microfarad capacitor 10 MF  (max 50 volts ) (for charging ) (what is the speed of charging and why I should consider that ? ) 
-how much Microfarad (µF) do i need for that project? 
-
-
-
-
-- Diode (note the energy cost for that is 0.6-0.7 volts)  OR Germanium diode (energy cost of 0.3)
-
-# Energy Harvesting Project: Component List
-
-This project involves building a piezoelectric tile to harvest energy from footsteps. The following is a list of components needed for this project:
-
-1. **[Piezoelectric Discs](https://www.amazon.co.uk/gp/product/B0C68Q6N8B/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)**: These will be used to construct the piezoelectric tiles. Each disc should be 27mm in diameter.
-
-2. **Flexible Clear PVC**: This will serve as the base for the piezoelectric tiles. The PVC should have a thickness of 1mm.
-
-3. **[Copper Foil for Negative Side](https://www.amazon.co.uk/gp/product/B09FGCFF6G/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)**: This will be used to affix the piezoelectric discs to the PVC on the negative side of the circuit.
-
-4. **[Copper Foil for Positive Side](https://www.amazon.co.uk/gp/product/B07CSKGHDW/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)**: This will be used on the positive side of the circuit.
-
-5. **[Clear Sticky Back Plastic Book Cover](https://www.amazon.co.uk/Style-Adhesive-Sticky-Plastic-Exercise/dp/B07B9G7V3P/ref=sr_1_3_sspa?keywords=clear+self+adhesive+film&qid=1687856280&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)**: This will be used to cover and protect the piezoelectric discs.
-
-6. **[LTC3588-1 Energy Harvester Breakout](https://coolcomponents.co.uk/products/energy-harvester-ltc3588-breakout)**: This component will manage the power from the harvested energy.
-
-7. **[3.7V Lithium Polymer Rechargeable Battery](https://uk.rs-online.com/web/p/speciality-size-rechargeable-batteries/1251266?cm_mmc=UK-PLA-DS3A-_-google-_-CSS_UK_EN_Batteries_%26_Chargers_Whoop-_-Speciality+Size+Rechargeable+Batteries_Whoop-_-1251266&matchtype=&pla-529413209672&gclid=CjwKCAjwkeqkBhAnEiwA5U-uM4duz2aMI5VGAOymOHhmuY9T7OLRgWi0FYfHA1KfSKMymlsNpEG3lBoCa8gQAvD_BwE&gclsrc=aw.ds)**: This battery will store the harvested energy.
-
-8. **[Feather Huzzah ESP8266](https://www.adafruit.com/product/2821)**: This will acquire power harvested, charging, and frequency measurements, and transmit the data to cloud storage.
-
-9. **[ThingSpeak Channel](https://thingspeak.com/channels/2201210/edit)**: This platform will store and retrieve your data.
-
-10. **[Easy Connection Wires]([https://www.amazon.co.uk/gp/product/B07NWD5](https://www.amazon.co.uk/gp/product/B07NWD5NTN/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)**
-
-
-
-# Design of the tile
-List of materials :
-
-Rubber tile: The choice of material is essential here. Rubber is chosen because it is durable, flexible, and resilient, for frequently walking.
-
-Rubber ball: This will be placed in the middle of the tile, acting as the central point of contact. The ball should be small enough to fit comfortably in the space between the two halves of the tile, but large enough to make contact with both piezoelectric sensors when pressure is applied to the tile.
-# patterns and thoughts of how to create the piezoelectric device
-
-
-# Thoughts of which devices to power 
-
-1. lights 
-2. microcontrollers 
-3. Occupancy Sensors
-4. green communication (node)
-5. Smart switches
-
-
-# potential ways to visualize the results: 
-
-Visual Representations:  The more steps, the brighter the light.
-
-Time-based Comparisons: how much energy would be generated over time.
-
-# Inspiration Videos and Articles
-
-1. https://www.youtube.com/watch?v=dO8zsgbunvY - Piezoelectric Effect - Using Crystals to Generate Electricity
-2. https://www.youtube.com/watch?v=RiRyzLl4Y8U - Full Wave Bridge Rectifier + Capacitor filters + half wave rectifier (the engineering mindset)
-
-
-
-(https://reader.elsevier.com/reader/sd/pii/S0196890422000681?token=AFD5F7CA93BB9FAA56042AC6F2865C62F7A5FC66C200C1C4D9B9C6044E4D53B57DBC336F071ADACD4F7C774C14C267E5&originRegion=eu-west-1&originCreation=20230511141830
-A review of piezoelectric energy harvesting tiles)
-
-## The decision making process
-- making tile of piezoelectric for harvesting energy 
-- create the circuit
-- material of the tile
-- conductive materials
-- what  to measure ?
-- how to display the data after deploy the tile
-
-# process of creation 
--  checking the current flow of the bridge rectifier
-
- [![ 17/5checking the current flow](https://img.youtube.com/vi/git2ZRKCuz4/0.jpg)](https://youtube.com/shorts/git2ZRKCuz4)
- 
-- checking the charge of supercapacitor
-
- [![ 17/5checking the charge of supercapacitor](https://img.youtube.com/vi/cgkGJ2SmKRU/0.jpg)](https://youtube.com/shorts/cgkGJ2SmKRU)
- 
-- Different way of creating the circuit : Copper foil underneath for the negative side and above for the positive side. Moreover the piezoelectric cover with tape to prevent from that to brake.
-![Circuit with Copper Foil](https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/91495337293ec5821d29b22b9583bb38f568e1e7/images/circute%20with%20cooper%20foil%20for%20negative%20and%20positive%20Large.jpeg)
-
-
-
-
-# Second Prototype
-In the second prototype, I attached the copper foil and piezoelectric component to a cardboard surface using a clear adhesive. This method ensured that the circuit components remained securely in place.
-
-To achieve this, I carefully adhered the copper foil, both the negative and positive sides, along with the piezoelectric component onto the cardboard. The copper foil acted as the conductive material for the circuit, while the clear adhesive provided a strong bond between the components and the cardboard surface.
-
-By affixing the circuit elements to the cardboard, I created a stable and functional prototype that maintained the desired circuit arrangement.
-
-In the video at 0:36, a captivating demonstration was shown, illustrating the charging process of 470 microfarads (μF), 16-volt (V) capacitor
-The video showcases the charging process of a 470 microfarads (μF) capacitor. By utilizing the impact of footsteps on a tile surface, an estimated current of approximately 0.5 milliamperes (mA) or 0.0005 Amperes (A) is directed into the capacitor. 
-**Using the formula Q = C × V, where Q represents the charge, C represents the capacitance, and V denotes the voltage across the capacitor,** the calculated charge on the capacitor is approximately 470 × 10^(-6) Coulombs (C), or 470 micro coulombs (μC). 
-The specific voltage value is not provided, but with the known capacitance and the applied voltage, it is possible to estimate the charge accumulation. The demonstration illustrates the utilization of mechanical energy from footsteps to generate an electrical charge and charge the capacitor.
-
-## Checking the charge of the supercapacitor with the second prototype 
- [![ 6/6 checking the charge of supercapacitor with the new circuit ](https://img.youtube.com/vi/lCWuk8zGKjg/0.jpg)](https://youtu.be/lCWuk8zGKjg)
- 
-![Circuit with Copper Foil](https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/6ac9517e8cfcaad6a790751ce78773cfdc16aff2/images/The%20circuit%20of%20the%20second%20prototype.jpeg)
-## The layers
-- |------------------------|
-- |   Copper Foil          |  <- Positive Side
-- |------------------------|
-- |   Clear Stick Wrap     |
-- |------------------------|
-- |   Piezo Electric       |
-- |------------------------|
-- |   Negative Copper Foil |  
-- |------------------------|
-- |   Cardboard            |
-- |------------------------|
-- 
-
-
-
-
-
-# theird prototype with the calculation of the energy that is stored 
-
-## Description of the video 
-This captivating video showcases an experiment with a piezoelectric tile to generate electrical energy through jumping. As the jumper lands on the tile, mechanical energy is converted into electricity. The video highlights the changing voltage readings on a multimeter, starting from the lowest range and reaching the upper limit of 200mV. The multimeter range is then adjusted to 2000mV to accommodate higher readings. The voltage gradually increases with each jump until it reaches 0.400V after approximately 250 jumps within less than 4 minutes. Witness piezoelectricity's impressive energy generation potential through simple jumping movements in this exciting video experiment.
-
-# Video link
-[![cheking the charging of the capacitor with the new chip ltc3588-1](https://img.youtube.com/vi/eATSxM-Sl1c/0.jpg)](https://youtu.be/eATSxM-Sl1c)
-
-
-## The calculation of the energy
-To calculate the energy stored in the capacitor based on your specific values, we can follow these steps:
-
-Determine the capacitance (C) of the capacitor. In your case, the capacitance is 1000 microfarads (1000 μF).
-
-Use the formula: E = 1/2 * C * V^2, where E represents the energy stored in the capacitor, C is the capacitance, and V is the voltage across the capacitor.
-
-Substituting the values into the formula, we have:
-
-E = 1/2 * (1000 * 10^-6 F) * (0.400 V)^2
-E = 1/2 * 10^-3 F * 0.160 V^2
-E = 8 * 10^-5 J
-
-Therefore, based on the given values, the energy stored in the capacitor would be approximately 8 * 10^-5 joules (J).8 * 10^-5 = 0.00008
-
-So, the end number -5 indicates that the energy stored in the capacitor is a very small value, specifically 0.00008 joules.
-
-
-## Circuit Connections
-### Connection Types
-
-The circuit connections can be categorized into two types: parallel and series.
-
-| Connection type | Positive terminals | Negative terminals | Current  | Voltage  |
-|-----------------|--------------------|--------------------|----------|----------|
-| Parallel        | Connected together | Connected together | Same     | Different|
-| Series          | Connected in a row | Connected in a row | Different| Same     |
-
-
-
-
-
-
