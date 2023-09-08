@@ -23,6 +23,7 @@ The research outcomes will contribute knowledge regarding sustainable power sour
 
 **Literature Review**
 
+
 2.1 Introduction to Piezoelectric Tiles for Energy Harvesting
 The use of piezoelectric tiles for indoor energy harvesting is a promising yet challenging approach to sustainable power generation. The concept of converting mechanical energy from footsteps into electrical energy, while innovative, is a familiar idea (Li and Strezov, 2014; Sharpes et al., 2016). The utilisation of a piezoelectric idea as a plentiful but previously untapped energy resource dates back to as early as 1880.  It was pioneered by the Curie brothers, Pierre and Jacques, who laid the groundwork for this transformative approach(Woodford, 2009).
 
