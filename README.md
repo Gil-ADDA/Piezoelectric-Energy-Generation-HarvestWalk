@@ -282,7 +282,12 @@ Access to the code chapter 2
 **8.5 Algorithm of the HarvestWalk - Exhibition code**
 The flowchart outlines the logic of an Arduino sketch designed to control a strip of LEDs based on the number of button presses. The sketch operates in a continuous loop, initially checking the state of the first button. If pressed, the program updates the press count, combined press count, and the LED strip accordingly. Subsequently, the program checks if the cumulative count of both button presses has reached a predefined threshold (260). If so, it resets the counters and switches off the LEDs. The program then proceeds to check the state of the second button, following a similar logic. If the second button is pressed, the program updates the press2 count, combined press count, and the LED strip. The program then checks again if the cumulative count has reached the threshold, and if so, resets the counters and switches off the LEDs. This process continues indefinitely, providing a dynamic and interactive way to control the LED strip see diagram 3 below.
 
+![Diagram 3 Algorithm flowchart](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/ad374ace69ed69d8ef3663eaa5316ba4c4104757/Project%20Figures%20Tables%20and%20Diagram/Diagram%203%20Algorithm%20flowchart.png)
+
+
 **9. Electronic Component Choices**
+![Table 9 Electronic Component](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/ad374ace69ed69d8ef3663eaa5316ba4c4104757/Project%20Figures%20Tables%20and%20Diagram/Table%209%20Electronic%20Component.png)
+
  
 ** 10. Visualisation and communication**
 
@@ -294,6 +299,10 @@ Designed to visually represent the energy stored in a 2200µF capacitor, this di
 
 The Capacitometer is mounted on laser-cut wood, with each of its 58 LEDs fitting snugly into a 2mm-edged hole,  See figure 22 below. A transparent acrylic layer, fashioned using laser technology, encases the device. The meter's scale spans from 0 to 730mC, indicative of the capacitor's charge, adjusted from 726mC for clarity and ease of understanding.
 To ensure a harmonious visual presentation, the Capacitometer's stand has been crafted to echo the aesthetic of the HarvestWalk tile.
+
+
+![Figure 22 Display the HarvestWalk Tile with the Capacitometer in the Exhibition](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/ad374ace69ed69d8ef3663eaa5316ba4c4104757/Project%20Figures%20Tables%20and%20Diagram/Figure%2022%20Display%20the%20HarvestWalk%20Tile%20with%20the%20Capacitometer%20in%20the%20Exhibition.png)
+
  
 
  
@@ -308,7 +317,8 @@ Energy Storage: The LTC-3588-1 chip converts the AC voltage, directing it to an 
 Visual Output: The accumulated energy powers an LED diode, visually representing the successful energy conversion.
 This sequence underscores the system's capability to transform mechanical stimuli into usable electrical energy, exemplified by the LED's illumination. For a practical demonstration of the system in action, please refer to the accompanying video 4.
 
- 
+ ![Diagram 4 HarvestWalk Scheme of Proof of Concept](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/ad374ace69ed69d8ef3663eaa5316ba4c4104757/Project%20Figures%20Tables%20and%20Diagram/Diagram%204%20HarvestWalk%20Scheme%20of%20Proof%20of%20Concept.png)
+
 
 
 
