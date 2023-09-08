@@ -203,6 +203,11 @@ After successfully powering the LED, the next step was to find microprocessors t
 
 
 Link for the experiment see video 2 with the capacitor 0.22 F
+
+
+
+
+
 [![Video 2](https://img.youtube.com/vi/flG9PlelOzI/0.jpg)](https://youtu.be/flG9PlelOzI)
 
 
