@@ -198,11 +198,12 @@ Further academic research on energy conversion and harvesting from piezoelectric
 **6.3 Microprocessor Integration**
 
 After successfully powering the LED, the next step was to find microprocessors that could read data, such as temperature or humidity, and communicate via Bluetooth. Due to the limited time available to complete the project and the need to prepare for an exhibition, this result was finalised. However, several studies have demonstrated success in powering electrical circuits through the movement of piezoelectric materials, which will be elaborated upon in the discussion section.
+Link for the experiment see video 2 with the capacitor 0.22 F
+
 
 ![Table 1 Experiments](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%201%20Experiments.png)
 
 
-Link for the experiment see video 2 with the capacitor 0.22 F
 
 
 
@@ -278,8 +279,10 @@ Access to the code chapter 1
 **8.2 Chapter 2: Energy Visualization and Gamification**
 
 In this phase, the focus shifts toward creating an engaging exhibition experience. The aim is to communicate the previously collected voltage data effectively. The number of button presses—registered from both the right and left buttons—serves as an innovative representation of the energy stored in the 2200 microfarad capacitor. This visual portrayal is facilitated by illuminating a set of 56 LEDs, thus offering visitors an intuitive understanding of energy accumulation. Furthermore, the incorporation of a piezo tile demonstrates the concept of energy generation via mechanical force, aligning with the project's educational aspirations.
-Access to the code chapter 2
+
 - [Press Buttons and voltage measurements](https://github.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/blob/7295c67905b1bed97f45a55a4a08c93202d78824/code/Press%20Buttons%20and%20voltage%20measurements)
+Access to the code chapter 2
+
 ![Table 4 Code Description](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%204%20Code%20Description.png)
 
 ![Table 5 Library Description](https://raw.githubusercontent.com/Gil-ADDA/Piezoelectric-Energy-Generation-HarvestWalk/28045c1409424383080527edc3bb8bb507bd9a4a/Project%20Figures%20Tables%20and%20Diagram/Table%205%20Library%20Description.png)
